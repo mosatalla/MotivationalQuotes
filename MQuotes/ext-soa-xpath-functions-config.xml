@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soa-xpath-functions xmlns="http://xmlns.oracle.com/soa/config/xpath"
+                     xmlns:utl="http://www.oracle.com/XSL/Transform/java/numericFunctions.RandomNumber">
+<function name="utl:getRandomNumber">
+ <className>numericFunctions.RandomNumber</className>
+ <return type="number"/>
+ <params>
+  <param name="low" type="number"/> 
+  <param name="high" type="number"/>
+ </params>
+   <desc/>
+    <detail>
+       <![CDATA[This function generate a random number between tow numbers.]]>
+    </detail>
+</function> 
+</soa-xpath-functions>
+

@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetQuote" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetQuote" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="MotivationalQuotesCollection" type="MotivationalQuotesCollection"/>
+   <xs:complexType name="MotivationalQuotesCollection">
+      <xs:sequence>
+         <xs:element name="MotivationalQuotes" type="MotivationalQuotes" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="MotivationalQuotes">
+      <xs:sequence>
+         <xs:element name="mqId" type="xs:decimal"/>
+         <xs:element name="quotes" minOccurs="0">
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:maxLength value="500"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="GetQuoteSelect_PMqIdInputParameters" type="GetQuoteSelect_PMqId"/>
+   <xs:complexType name="GetQuoteSelect_PMqId">
+      <xs:sequence>
+         <xs:element name="PMqId" type="xs:decimal" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

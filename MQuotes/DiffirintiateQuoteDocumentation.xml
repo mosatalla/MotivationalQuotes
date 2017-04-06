@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="11.1.1.7.0.2.22" fileRevision="20120217"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+    <component name="DiffirintiateQuote">
+        <topicDocumentations>
+            <topicDocumentation name="DiffirintiateQuote">
+                <descriptions>
+                    <description locale="en">DiffirintiateQuote</description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT18719896359030">
+                <labels>
+                    <label locale="en">ServiceTask</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT18720269936392">
+                <labels>
+                    <label locale="en">NotificationTask</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT1871984876415">
+                <labels>
+                    <label locale="en">Start</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT18719848765666">
+                <labels>
+                    <label locale="en">End</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf4"/>
+            <topicDocumentation name="sf8"/>
+            <topicDocumentation name="sf14"/>
+        </topicDocumentations>
+    </component>
+</processDocumentation>

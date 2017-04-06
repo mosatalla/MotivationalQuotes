@@ -1,0 +1,25 @@
+<?binding.jca GetQuote_db.jca?>
+<wsdl:definitions name="GetQuote" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/MotivationalQuotes/MQuotes/GetQuote" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/MotivationalQuotes/MQuotes/GetQuote" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:top="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetQuote">
+    <plt:partnerLinkType name="GetQuote_plt">
+        <plt:role name="GetQuote_role">
+            <plt:portType name="tns:GetQuote_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetQuote" schemaLocation="xsd/GetQuote_table.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="GetQuoteSelect_inputParameters">
+        <wsdl:part name="GetQuoteSelect_inputParameters" element="top:GetQuoteSelect_PMqIdInputParameters"/>
+    </wsdl:message>
+    <wsdl:message name="MotivationalQuotesCollection_msg">
+        <wsdl:part name="MotivationalQuotesCollection" element="top:MotivationalQuotesCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="GetQuote_ptt">
+        <wsdl:operation name="GetQuoteSelect">
+            <wsdl:input message="tns:GetQuoteSelect_inputParameters"/>
+            <wsdl:output message="tns:MotivationalQuotesCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>
